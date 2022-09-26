@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Example name 1",
+    "rating": "Example rating 1",
+    "creationDate": "Examaple date 1"
+  },
+  {
+    "name": "Example name 2",
+    "rating": "Example rating 2",
+    "creationDate": "Examaple date 2"
+  },
+  {
+    "name": "Example name 3",
+    "rating": "Example rating 3",
+    "creationDate": "Examaple date 3"
+  },
+  {
+    "name": "Example name 4",
+    "rating": "Example rating 4",
+    "creationDate": "Examaple date 4"
+  }
+]
