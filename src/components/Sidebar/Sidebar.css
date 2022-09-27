@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  .sidebar {
+    background-color: white;
+    width: 80px;
+    height: 95vh;
+    box-shadow: 1px 1px 10px #dcdcdc;
+  }
+}

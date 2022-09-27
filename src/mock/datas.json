@@ -2,21 +2,21 @@
   {
     "name": "Example name 1",
     "rating": "Example rating 1",
-    "creationDate": "Examaple date 1"
+    "creationDate": "01/01/1970"
   },
   {
     "name": "Example name 2",
     "rating": "Example rating 2",
-    "creationDate": "Examaple date 2"
+    "creationDate": "02/01/1970"
   },
   {
     "name": "Example name 3",
     "rating": "Example rating 3",
-    "creationDate": "Examaple date 3"
+    "creationDate": "03/01/1970"
   },
   {
     "name": "Example name 4",
     "rating": "Example rating 4",
-    "creationDate": "Examaple date 4"
+    "creationDate": "04/01/1970"
   }
 ]
