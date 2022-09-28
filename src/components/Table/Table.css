@@ -190,6 +190,10 @@ td, th {
   border-radius: 0 0 10px 10px;
 }
 
+.title, .subtitle, button, ::placeholder, li, p.titleCheckbox {
+  user-select: none;
+}
+
 @media (min-width: 425px) {
   .inputText {
     width: 200px;
@@ -224,9 +228,10 @@ td, th {
     display: table-cell;
   }
 
-  .delete button {
+  .delete {
     border: none;
     background-color: #FFF;
+    color: #777;
     font-size: large;
     cursor: pointer;
   }

@@ -123,7 +123,7 @@ const Table = () => {
               <th className='name'>Nome do fornecedor<BiCaretDown className='arrowDown'/></th>
               <th className='rating'>Classificação<BiCaretDown className='arrowDown'/></th>
               <th className='date'>Data de criação<BiCaretDown className='arrowDown'/></th>
-              <th className='delete' style={{cursor:'auto'}}></th>
+              <th></th>
             </tr>
             {datas.map((data, i) => {
               return (
@@ -132,7 +132,9 @@ const Table = () => {
                   <td className='name'>{data.name}</td>
                   <td className='rating'>{data.rating}</td>
                   <td className='date'>{data.creationDate}</td>
-                  <td><FiTrash2 className='delete' /></td>
+                  <td><button className='delete'>
+                    <FiTrash2 />
+                  </button></td>
                 </tr>
               )
             })}
