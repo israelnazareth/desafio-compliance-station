@@ -40,28 +40,28 @@ const Sidebar = () => {
     <div className="sidebar">
       <FiMenu className='hamburger'/>
       <p className='area'>STATION</p>
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
-        <FiGlobe className='icons' />
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Painel Global'>
+        <FiGlobe className='icons'/>
       </button>
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Painel Detalhado'>
         <AiOutlineFolder className='icons' />
       </button>
       <hr />
       <p className='area'>FORMS</p>
-      <button name='buttons' className='buttonIcons selected' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons selected' onClick={(e) => selectedIcon(e)} title='Fornecedores'>
         <MdOutlinePeopleAlt className='icons' />
       </button>
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Formulários'>
         <GrDocumentText className='icons' name='icons2' />
       </button>
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Estatísticas'>
         <GrAnalytics className='icons' name='icons2' />
       </button>
       <hr />
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Configurações'>
         <FiSettings className='icons' />
       </button>
-      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)}>
+      <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Central de Ajuda'>
         <FiHeadphones className='icons' />
       </button>
     </div>
