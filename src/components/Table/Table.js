@@ -10,6 +10,17 @@ const Table = () => {
   const [expanded, setExpanded] = useState(false)
   const [counter, setCounter] = useState(0)
 
+  window.addEventListener('mouseup', ({ target }) => {
+    const checkboxes = document.getElementById("checkboxes");
+    const buttonFilter = document.getElementById("dropdown");
+    if (target.id !== 'dropdown' && target.id !== 'checkboxes' &&
+      target.tagName !== 'LI' && target.tagName !== 'INPUT') {
+        checkboxes.style.display = "none";
+        buttonFilter.classList.remove('opened')
+        setExpanded(false);
+    }
+  })
+
   const showCheckboxes = () => {
     const checkboxes = document.getElementById("checkboxes");
     const buttonFilter = document.getElementById("dropdown");
