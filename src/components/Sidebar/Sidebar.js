@@ -36,7 +36,9 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <FiMenu className='hamburger'/>
+      <button className='hamburger'>
+        <FiMenu />
+      </button>
       <p className='areaClosed'>STATION</p>
       <p className='areaOpened'>GERENCIADOR STATION</p>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Painel Global'>

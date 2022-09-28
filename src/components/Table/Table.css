@@ -48,7 +48,7 @@
   background-color: #F2F5FF;
   padding: 2px;
   border-radius: 5px;
-  margin:0 5px;
+  width: 10px;
 }
 
 .inputText {
@@ -86,6 +86,11 @@
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+  color: #777;
+  border: 1px solid #D9D9D9;
+  background-color: #FFF;
+  outline: none;
+  width: 100px;
 }
 
 .opened {
@@ -95,10 +100,8 @@
   outline-offset: 1px;
 }
 
-.closed {
-  color: #777;
-  border: 1px solid #D9D9D9;
-  background-color: #FFF;
+svg, p.counter, p.titleCheckbox {
+  pointer-events: none;
 }
 
 .iconFilter {
@@ -197,7 +200,7 @@ td, th {
   .searchButton {
     display: flex;
     position: absolute;
-    margin-right: 125px;
+    margin-right: 123px;
     justify-content: center;
     align-items: center;
     background-color: #263072;
@@ -251,7 +254,7 @@ td, th {
   }
 
   .searchButton {
-    margin-right: 145px;
+    margin-right: 143px;
   }
 
   .dropdown {

@@ -8,19 +8,18 @@ import './Table.css'
 
 const Table = () => {
   const [expanded, setExpanded] = useState(false)
+  const [counter, setCounter] = useState(0)
 
-  const showCheckboxes = (e) => {
+  const showCheckboxes = () => {
     const checkboxes = document.getElementById("checkboxes");
     const buttonFilter = document.getElementById("dropdown");
     if (!expanded) {
       checkboxes.style.display = "block";
-      buttonFilter.classList.add('opened')
-      buttonFilter.classList.remove('closed')
+      buttonFilter.classList.toggle('opened')
       setExpanded(true);
     } else {
       checkboxes.style.display = "none";
-      buttonFilter.classList.add('closed')
-      buttonFilter.classList.remove('opened')
+      buttonFilter.classList.toggle('opened')
       setExpanded(false);
     }
   }
@@ -45,7 +44,7 @@ const Table = () => {
     listItems.forEach(item => {
       if(item.checked) count +=1
     })
-    return <p className='counter'>{count}</p>
+    setCounter(count)
   }
 
   const clearFilters = () => {
@@ -55,6 +54,7 @@ const Table = () => {
       item.parentElement.style.backgroundColor = '#FFF'
       item.parentElement.style.color = '#777'
     })
+    setCounter(0)
   }
 
   const markAll = () => {
@@ -80,17 +80,17 @@ const Table = () => {
           <button className='searchButton'><FiSearch /></button>
           <button
             id='dropdown'
-            className='dropdown closed'
+            className='dropdown'
             onClick={() => showCheckboxes()}
           >
-            <BiFilterAlt className='iconFilter'/>Filtro {filtersCount()}<BiCaretDown className='arrowDown'/>
+            <BiFilterAlt className='iconFilter'/>Filtro {counter ? <p className='counter'>{counter}</p> : null}<BiCaretDown className='arrowDown'/>
           </button>
           <ul id='checkboxes' className='checkboxList'>
             <p className='titleCheckbox'>Classificações</p>
             {Array(5).fill(0).map((item, i) => {
               item = 
-              <label htmlFor={`label${i+1}`} className='checkboxItem' key={i}>
-                <li>
+              <label name='label' htmlFor={`label${i+1}`} className='checkboxItem' key={i}>
+                <li onClick={() => filtersCount()}>
                   <input
                     type="checkbox"
                     id={`label${i+1}`}
