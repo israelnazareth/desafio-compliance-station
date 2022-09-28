@@ -98,7 +98,7 @@
   display: none;
   list-style: none;
   position: fixed;
-  top:210px;
+  top:278px;
   margin-right: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -275,13 +275,6 @@ td, th {
 
 @media (min-width: 1440px) {
   .main {
-    width: 1440px;
-    height: 85vh;
-    transform: scale(1.1);
-    margin-top: 20px;
-  }
-
-  .checkboxList {
-    top: 172px;
+    max-width: 1440px;
   }
 }
