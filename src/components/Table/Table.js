@@ -10,12 +10,17 @@ const Table = () => {
   const [expanded, setExpanded] = useState(false)
 
   const showCheckboxes = (e) => {
-    let checkboxes = document.getElementById("checkboxes");
+    const checkboxes = document.getElementById("checkboxes");
+    const buttonFilter = document.getElementById("dropdown");
     if (!expanded) {
       checkboxes.style.display = "block";
+      buttonFilter.classList.add('opened')
+      buttonFilter.classList.remove('closed')
       setExpanded(true);
     } else {
       checkboxes.style.display = "none";
+      buttonFilter.classList.add('closed')
+      buttonFilter.classList.remove('opened')
       setExpanded(false);
     }
   }
@@ -75,7 +80,7 @@ const Table = () => {
           <button className='searchButton'><FiSearch /></button>
           <button
             id='dropdown'
-            className='dropdown'
+            className='dropdown closed'
             onClick={() => showCheckboxes()}
           >
             <BiFilterAlt className='iconFilter'/>Filtro {filtersCount()}<BiCaretDown className='arrowDown'/>

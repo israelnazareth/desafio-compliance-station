@@ -81,13 +81,24 @@
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   height: 32px;
-  color: #777;
-  border: 1px solid #D9D9D9;
   background-color: #FFF;
   border-radius: 4px;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.opened {
+  color: #263072;
+  border: 1px solid #263072;
+  outline: 2px solid #CDD5F2 !important;
+  outline-offset: 1px;
+}
+
+.closed {
+  color: #777;
+  border: 1px solid #D9D9D9;
+  background-color: #FFF;
 }
 
 .iconFilter {

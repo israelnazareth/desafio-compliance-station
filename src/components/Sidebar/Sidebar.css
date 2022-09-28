@@ -43,6 +43,7 @@
     cursor: pointer;
     font-size: large;
     user-select: none;
+    pointer-events: none;
   }
 
   .buttonIcons {
