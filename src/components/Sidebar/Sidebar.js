@@ -25,8 +25,6 @@ const Sidebar = () => {
       if (item.classList.contains('selected')) {
         item.classList.remove('selected')
       }
-      console.log(item.classList)
-      console.log(items);
     })
   }
 
