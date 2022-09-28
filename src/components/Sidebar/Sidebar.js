@@ -37,30 +37,39 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <FiMenu className='hamburger'/>
-      <p className='area'>STATION</p>
+      <p className='areaClosed'>STATION</p>
+      <p className='areaOpened'>GERENCIADOR STATION</p>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Painel Global'>
         <FiGlobe className='icons'/>
+        <p className='titleButtons'>Painel Global</p>
       </button>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Painel Detalhado'>
         <AiOutlineFolder className='icons' />
+        <p className='titleButtons'>Painel Detalhado</p>
       </button>
       <hr />
-      <p className='area'>FORMS</p>
+      <p className='areaClosed'>FORMS</p>
+      <p className='areaOpened'>GERENCIADOR FORMULÁRIOS</p>
       <button name='buttons' className='buttonIcons selected' onClick={(e) => selectedIcon(e)} title='Fornecedores'>
         <MdOutlinePeopleAlt className='icons' />
+        <p className='titleButtons'>Fornecedores</p>
       </button>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Formulários'>
         <GrDocumentText className='icons' name='icons2' />
+        <p className='titleButtons'>Formulários</p>
       </button>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Estatísticas'>
         <GrAnalytics className='icons' name='icons2' />
+        <p className='titleButtons'>Estatísticas</p>
       </button>
       <hr />
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Configurações'>
         <FiSettings className='icons' />
+        <p className='titleButtons'>Configurações</p>
       </button>
       <button name='buttons' className='buttonIcons' onClick={(e) => selectedIcon(e)} title='Central de Ajuda'>
         <FiHeadphones className='icons' />
+        <p className='titleButtons'>Central de Ajuda</p>
       </button>
     </div>
   )
