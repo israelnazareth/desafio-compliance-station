@@ -1,7 +1,7 @@
   .navbar {
   background-color: white;
   padding: 0;
-  height: 68px;
+  height: 6vh;
   box-shadow: 1px 1px 10px #dcdcdc;
   z-index: 1;
 }

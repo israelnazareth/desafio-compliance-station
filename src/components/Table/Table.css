@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 94vh;
 }
 
 .title {
@@ -108,8 +108,8 @@
 .checkboxList {
   display: none;
   list-style: none;
-  position: fixed;
-  top:278px;
+  position: absolute;
+  top: 266px;
   margin-right: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -259,7 +259,7 @@ td, th {
   }
 
   .checkboxList {
-    top: 240px;
+    top: 230px;
     margin-right: 30px;
   }
 
