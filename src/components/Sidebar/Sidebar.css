@@ -9,7 +9,8 @@
     align-items: center;
     background-color: #FFF;
     width: 90px;
-    height: 94vh;
+    min-height: 94vh;
+    padding-bottom: 15px;
     box-shadow: 1px 1px 10px #dcdcdc;
   }
 

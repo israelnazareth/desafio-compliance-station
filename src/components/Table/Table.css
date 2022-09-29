@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  height: 94vh;
+  margin-top: 5px;
 }
 
 .title {
@@ -240,6 +240,7 @@ td, th {
 @media (min-width: 768px) {
   .main {
     margin: auto;
+    margin-top: 5px;
     max-width: 768px;
   }
 
